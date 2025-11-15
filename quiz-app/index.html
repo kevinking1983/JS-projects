@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quick Quiz</h1>
+
+    <div id="quiz-box">
+        <h2 id="question">Loading...</h2>
+
+        <div id="options"></div>
+
+        <button id="next-btn" class="btn hidden">Next</button>
+
+        <div id="progress">Question <span id="current">1</span>/<span id="total"></span></div>
+    </div>
+
+    <div id="result-box" class="hidden">
+        <h2>Your Result</h2>
+        <p>You scored <span id="score"></span> out of <span id="total2"></span></p>
+        <button id="restart-btn" class="btn">Try Again</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
